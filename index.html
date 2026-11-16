@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flipstack</title>
+  <meta name="description" content="Sort the stack by flipping — a prefix-reversal colour puzzle." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect y='8' width='100' height='22' rx='6' fill='%23ef476f'/><rect y='39' width='100' height='22' rx='6' fill='%23ffd166'/><rect y='70' width='100' height='22' rx='6' fill='%2306d6a0'/></svg>" />
+</head>
+<body>
+  <header>
+    <h1>Flipstack</h1>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <main>
+    <div id="stack" aria-label="block stack"></div>
+  </main>
+
+  <footer>
+    <button id="newDeal">New deal</button>
+    <span class="hint">Tap a block to flip it — and everything above it — upside down. A flip is only
+      allowed when it lands the current top block on a matching colour. Sort all six colours into
+      groups; if no flip is possible, the round is lost.</span>
+  </footer>
+
+  <div id="overlay" class="hidden">
+    <div class="panel">
+      <h2 id="overlayTitle"></h2>
+      <p id="overlayBody"></p>
+      <button id="overlayDeal">New deal</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
