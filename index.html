@@ -15,11 +15,18 @@
   </header>
 
   <main>
-    <div id="stack" aria-label="block stack"></div>
+    <div id="board">
+      <div id="target" class="hidden" aria-label="required colour order"></div>
+      <div id="stack" aria-label="block stack"></div>
+    </div>
   </main>
 
   <footer>
     <button id="newDeal">New deal</button>
+    <div id="modeToggle" role="radiogroup" aria-label="game mode">
+      <button data-mode="classic" class="mode active">Classic</button>
+      <button data-mode="advanced" class="mode">Ordered</button>
+    </div>
     <span class="hint">Tap a block to flip it — and everything above it — upside down. A flip is only
       allowed when it lands the current top block on a matching colour. Sort all six colours into
       groups; if no flip is possible, the round is lost.</span>

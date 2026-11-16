@@ -21,11 +21,20 @@ flips). Six colours, six blocks each, dealt in random order.
   there.
 - Fewest moves wins bragging rights.
 
+## Modes
+
+- **Classic** — any order of the six colour groups wins.
+- **Ordered** — each deal also draws a required colour order, shown as a
+  slim column beside the stack (each band marks exactly where its six
+  blocks must end up). The stack must match it top to bottom; finishing
+  fully sorted in the wrong order is a loss. Stats are tracked per mode.
+
 ## Stats
 
 The header tracks moves in the current round; wins, losses, best (fewest
-moves in a win) and worst persist in `localStorage`. Re-dealing after making
-at least one move counts as a loss.
+moves in a win) and worst persist in `localStorage`, separately per mode.
+Re-dealing (or switching modes) after making at least one move counts as a
+loss.
 
 ## Running
 
